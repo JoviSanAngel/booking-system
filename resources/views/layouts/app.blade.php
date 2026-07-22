@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Casa Lumandas') }}</title>
+    <title>{{ config('app.name', 'Casa De Jovi') }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 </head>
@@ -21,7 +21,7 @@
                         <path d="M16 29L21 34L32 23" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <span class="font-bold text-gray-800">Casa <span class="text-amber-500">Lumandas</span></span>
+                <span class="font-bold text-gray-800">Casa De<span class="text-amber-500"> Jovi</span></span>
             </div>
 
             <div class="px-4 pt-4">

@@ -38,7 +38,7 @@
             </a>
 
             <div class="relative z-10">
-                <p class="text-amber-400 text-sm font-semibold tracking-[0.2em] uppercase mb-4">Simple. Reliable. Yours.</p>
+                <p class="text-amber-400 text-sm font-semibold tracking-[0.2em] uppercase mb-4">Where Comforts Feels Like Home.</p>
                 <h1 class="font-display text-5xl leading-tight text-white">
                     Manage & Book <span class="text-amber-400">Your Services</span>
                 </h1>

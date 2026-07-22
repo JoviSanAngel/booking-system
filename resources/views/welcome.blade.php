@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name', 'Casa Lumandas') }}</title>
+    <title>{{ config('app.name', 'Casa De Jovi') }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
                     <path d="M34 4V12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
                     <path d="M16 29L21 34L32 23" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span class="text-xl font-semibold text-white">Casa<span class="text-amber-400">Lumandas</span></span>
+                <span class="text-xl font-semibold text-white">Casa De<span class="text-amber-400"> Jovi</span></span>
             </a>
 
             <div class="flex items-center gap-6">
@@ -56,7 +56,7 @@
 
             <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 pt-8 pb-40">
                 <div class="max-w-xl py-16">
-                    <p class="text-amber-400 text-sm font-semibold tracking-[0.2em] uppercase mb-4">Simple. Reliable. Yours.</p>
+                    <p class="text-amber-400 text-sm font-semibold tracking-[0.2em] uppercase mb-4">Where Comforts Feels Like Home.</p>
                     <h1 class="font-display text-5xl sm:text-6xl leading-tight text-white">
                         Book Your <span class="text-amber-400">Stay Now</span>
                     </h1>
